@@ -1,0 +1,5 @@
+.root {
+    border: solid 5px pink;
+    display: flex;
+    flex-wrap: wrap;
+}

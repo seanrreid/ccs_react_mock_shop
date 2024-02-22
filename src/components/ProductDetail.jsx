@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
+import style from './productDetail.module.css'
+
 const ProductDetail = ({ product }) => {
     return (
-        <div className='card' style={{width: '300px', margin: '8px'}}>
+        <div className={style.card}>
             <div className='card-image'>
                 <figure className='image is-square'>
                     <img

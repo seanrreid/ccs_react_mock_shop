@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ProductDetail from './ProductDetail';
+import styles from './products.module.css'
 
 function Products() {
     const [data, setData] = useState([]);
@@ -16,7 +17,7 @@ function Products() {
     }, []);
 
     return (
-        <section className='container is-medium is-flex is-flex-wrap-wrap is-flex-direction-row is-align-items-stretch'>
+        <section className={styles.root}>
             {data.map((item) => {
                 return <ProductDetail product={item} key={item.node.id} />;
             })}
